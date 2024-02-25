@@ -117,7 +117,6 @@ fun Ejercicio1(navigateToHome: (() -> Unit)? = null) {
                     .padding(vertical = 10.dp),
                 cleanAllValues = cleanAllValues,
                 onValueChanged = { value ->
-                    println("Value changed: $value")
                     studentAverageGrade = studentAverageGrade.copy(name = value);
                 }
             )
@@ -226,8 +225,6 @@ fun Ejercicio1(navigateToHome: (() -> Unit)? = null) {
                     modifier = Modifier.padding(vertical = 10.dp)
                         .focusRequester(FocusRequester()),
                     onClick = {
-                        println(studentAverageGrade);
-                        println(cleanAllValues);
                         cleanAllValues = true;
                         studentAverageGrade = studentAverageGrade.copy("", emptyList(), BigDecimal.ZERO, "Reprobado");
                     },
@@ -242,13 +239,10 @@ fun Ejercicio1(navigateToHome: (() -> Unit)? = null) {
                 OutlinedButton(
                     modifier = Modifier.padding(vertical = 10.dp),
                     onClick = {
-                        println(studentAverageGrade);
-                        println(cleanAllValues);
                         cleanAllValues = false;
                         if(studentAverageGrade.grades.size == 5 && studentAverageGrade.name.isNotEmpty()) {
                             val averageGrade = studentAverageGrade.grades.reduce { acc, value -> acc.add(value) }
                                 .divide(BigDecimal(studentAverageGrade.grades.size));
-                            println(averageGrade);
                             studentAverageGrade =  studentAverageGrade.copy(average = averageGrade.setScale(2, RoundingMode.HALF_UP));
                             val isApproved = when (studentAverageGrade.average?.compareTo(BigDecimal(6)) ?: -1) {
                                 1, 0 -> "Aprobado"
