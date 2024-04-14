@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FoodFast</string>
+    <string name="clave_a">Clave A</string>
+    <string name="feature_products">Productos Destacados</string>
+    <string name="products">Productos</string>
+    <string name="history_date">Fecha:</string>
+    <string name="history_product">Producto:</string>
+    <string name="history_price">Price:</string>
+    <string name="history_quantity">Cantidad comprada:</string>
+</resources>
