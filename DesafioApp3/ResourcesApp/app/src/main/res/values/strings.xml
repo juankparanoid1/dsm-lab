@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ResourcesApp</string>
+    <string name="categories">Categorias</string>
+    <string name="all_categories">Todos las categorias</string>
+    <string name="resource_details">Detalle del Recurso</string>
+    <string name="resource_url">Url del recurso</string>
+    <string name="resources">Recursos</string>
+    <string name="search">Buscar</string>
+    <string name="all_resources">Todos los recursos</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_image">Category Image</string>
+    <string name="resource_image">Resource Image</string>
+    <string name="resource_name">Resource Name</string>
+    <string name="welcome_app">Bienvenido</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90551245854",
+    "project_id": "resources-app-de050",
+    "storage_bucket": "resources-app-de050.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90551245854:android:30b789626aa6a1b7eea20f",
+        "android_client_info": {
+          "package_name": "com.example.resourcesApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAumEl4BN3AaMZ2oaWy2Fz-wksujH9cwsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
